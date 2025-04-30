@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A4405EA82DC2B8CA0024BD9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4405E8D2DC2B8C80024BD9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4405E942DC2B8C80024BD9C;
+			remoteInfo = IntervalTimerClock;
+		};
+		A4405EB22DC2B8CA0024BD9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4405E8D2DC2B8C80024BD9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4405E942DC2B8C80024BD9C;
+			remoteInfo = IntervalTimerClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4405E952DC2B8C80024BD9C /* IntervalTimerClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimerClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4405EA72DC2B8CA0024BD9C /* IntervalTimerClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4405EB12DC2B8CA0024BD9C /* IntervalTimerClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A4405E972DC2B8C80024BD9C /* IntervalTimerClock */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IntervalTimerClock;
+			sourceTree = "<group>";
+		};
+		A4405EAA2DC2B8CA0024BD9C /* IntervalTimerClockTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IntervalTimerClockTests;
+			sourceTree = "<group>";
+		};
+		A4405EB42DC2B8CA0024BD9C /* IntervalTimerClockUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IntervalTimerClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4405E922DC2B8C80024BD9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EA42DC2B8CA0024BD9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EAE2DC2B8CA0024BD9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4405E8C2DC2B8C80024BD9C = {
+			isa = PBXGroup;
+			children = (
+				A4405E972DC2B8C80024BD9C /* IntervalTimerClock */,
+				A4405EAA2DC2B8CA0024BD9C /* IntervalTimerClockTests */,
+				A4405EB42DC2B8CA0024BD9C /* IntervalTimerClockUITests */,
+				A4405E962DC2B8C80024BD9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4405E962DC2B8C80024BD9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4405E952DC2B8C80024BD9C /* IntervalTimerClock.app */,
+				A4405EA72DC2B8CA0024BD9C /* IntervalTimerClockTests.xctest */,
+				A4405EB12DC2B8CA0024BD9C /* IntervalTimerClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4405E942DC2B8C80024BD9C /* IntervalTimerClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4405EBB2DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClock" */;
+			buildPhases = (
+				A4405E912DC2B8C80024BD9C /* Sources */,
+				A4405E922DC2B8C80024BD9C /* Frameworks */,
+				A4405E932DC2B8C80024BD9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4405E972DC2B8C80024BD9C /* IntervalTimerClock */,
+			);
+			name = IntervalTimerClock;
+			packageProductDependencies = (
+			);
+			productName = IntervalTimerClock;
+			productReference = A4405E952DC2B8C80024BD9C /* IntervalTimerClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4405EA62DC2B8CA0024BD9C /* IntervalTimerClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4405EBE2DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClockTests" */;
+			buildPhases = (
+				A4405EA32DC2B8CA0024BD9C /* Sources */,
+				A4405EA42DC2B8CA0024BD9C /* Frameworks */,
+				A4405EA52DC2B8CA0024BD9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4405EA92DC2B8CA0024BD9C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4405EAA2DC2B8CA0024BD9C /* IntervalTimerClockTests */,
+			);
+			name = IntervalTimerClockTests;
+			packageProductDependencies = (
+			);
+			productName = IntervalTimerClockTests;
+			productReference = A4405EA72DC2B8CA0024BD9C /* IntervalTimerClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4405EB02DC2B8CA0024BD9C /* IntervalTimerClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4405EC12DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClockUITests" */;
+			buildPhases = (
+				A4405EAD2DC2B8CA0024BD9C /* Sources */,
+				A4405EAE2DC2B8CA0024BD9C /* Frameworks */,
+				A4405EAF2DC2B8CA0024BD9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4405EB32DC2B8CA0024BD9C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4405EB42DC2B8CA0024BD9C /* IntervalTimerClockUITests */,
+			);
+			name = IntervalTimerClockUITests;
+			packageProductDependencies = (
+			);
+			productName = IntervalTimerClockUITests;
+			productReference = A4405EB12DC2B8CA0024BD9C /* IntervalTimerClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4405E8D2DC2B8C80024BD9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A4405E942DC2B8C80024BD9C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A4405EA62DC2B8CA0024BD9C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A4405E942DC2B8C80024BD9C;
+					};
+					A4405EB02DC2B8CA0024BD9C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A4405E942DC2B8C80024BD9C;
+					};
+				};
+			};
+			buildConfigurationList = A4405E902DC2B8C80024BD9C /* Build configuration list for PBXProject "IntervalTimerClock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4405E8C2DC2B8C80024BD9C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A4405E962DC2B8C80024BD9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4405E942DC2B8C80024BD9C /* IntervalTimerClock */,
+				A4405EA62DC2B8CA0024BD9C /* IntervalTimerClockTests */,
+				A4405EB02DC2B8CA0024BD9C /* IntervalTimerClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4405E932DC2B8C80024BD9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EA52DC2B8CA0024BD9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EAF2DC2B8CA0024BD9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4405E912DC2B8C80024BD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EA32DC2B8CA0024BD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405EAD2DC2B8CA0024BD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4405EA92DC2B8CA0024BD9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4405E942DC2B8C80024BD9C /* IntervalTimerClock */;
+			targetProxy = A4405EA82DC2B8CA0024BD9C /* PBXContainerItemProxy */;
+		};
+		A4405EB32DC2B8CA0024BD9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4405E942DC2B8C80024BD9C /* IntervalTimerClock */;
+			targetProxy = A4405EB22DC2B8CA0024BD9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A4405EB92DC2B8CA0024BD9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4405EBA2DC2B8CA0024BD9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4405EBC2DC2B8CA0024BD9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimerClock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4405EBD2DC2B8CA0024BD9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimerClock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4405EBF2DC2B8CA0024BD9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntervalTimerClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntervalTimerClock";
+			};
+			name = Debug;
+		};
+		A4405EC02DC2B8CA0024BD9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntervalTimerClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntervalTimerClock";
+			};
+			name = Release;
+		};
+		A4405EC22DC2B8CA0024BD9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntervalTimerClock;
+			};
+			name = Debug;
+		};
+		A4405EC32DC2B8CA0024BD9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntervalTimerClock.IntervalTimerClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntervalTimerClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4405E902DC2B8C80024BD9C /* Build configuration list for PBXProject "IntervalTimerClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4405EB92DC2B8CA0024BD9C /* Debug */,
+				A4405EBA2DC2B8CA0024BD9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4405EBB2DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4405EBC2DC2B8CA0024BD9C /* Debug */,
+				A4405EBD2DC2B8CA0024BD9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4405EBE2DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4405EBF2DC2B8CA0024BD9C /* Debug */,
+				A4405EC02DC2B8CA0024BD9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4405EC12DC2B8CA0024BD9C /* Build configuration list for PBXNativeTarget "IntervalTimerClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4405EC22DC2B8CA0024BD9C /* Debug */,
+				A4405EC32DC2B8CA0024BD9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4405E8D2DC2B8C80024BD9C /* Project object */;
+}
