@@ -28,6 +28,19 @@ final class TimerInterval {
         self.order = order
     }
 
+    // Add a copy constructor that preserves the ID
+    init(
+        copyFrom interval: TimerInterval, name: String? = nil, duration: Int? = nil,
+        type: IntervalType? = nil, color: String? = nil, order: Int? = nil
+    ) {
+        self.id = interval.id
+        self.name = name ?? interval.name
+        self.duration = duration ?? interval.duration
+        self.type = type ?? interval.type
+        self.color = color ?? interval.color
+        self.order = order ?? interval.order
+    }
+
     var displayDuration: String {
         let minutes = duration / 60
         let seconds = duration % 60

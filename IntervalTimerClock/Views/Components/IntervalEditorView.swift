@@ -64,11 +64,16 @@ struct IntervalEditorView: View {
                     name: "",
                     duration: 60,
                     type: .work,
-                    color: "#4285F4"
+                    color: "#4285F4",
+                    order: 0  // This will be updated when saved
                 ),
                 isNew: true,
                 onSave: { newInterval in
-                    intervals.append(newInterval)
+                    // Set the order to be at the end of the list
+                    var updatedInterval = newInterval
+                    updatedInterval.order = intervals.count
+
+                    intervals.append(updatedInterval)
                     showingAddInterval = false
                 },
                 onCancel: {
@@ -265,13 +270,29 @@ struct IntervalDetailView: View {
 
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
-                        let updatedInterval = TimerInterval(
-                            name: name,
-                            duration: duration,
-                            type: type,
-                            color: color,
-                            order: interval.order
-                        )
+                        // Create a new interval with updated values
+                        let updatedInterval: TimerInterval
+
+                        if isNew {
+                            // Create brand new interval
+                            updatedInterval = TimerInterval(
+                                name: name,
+                                duration: duration,
+                                type: type,
+                                color: color,
+                                order: interval.order
+                            )
+                        } else {
+                            // Use the copy constructor to preserve the ID
+                            updatedInterval = TimerInterval(
+                                copyFrom: interval,
+                                name: name,
+                                duration: duration,
+                                type: type,
+                                color: color
+                            )
+                        }
+
                         onSave(updatedInterval)
                     }
                     .disabled(duration <= 0)
