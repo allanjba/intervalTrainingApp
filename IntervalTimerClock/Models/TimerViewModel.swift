@@ -57,10 +57,15 @@ class TimerViewModel: ObservableObject {
             .sink { [weak self] index in
                 guard let self = self,
                     let configuration = self.timerConfiguration,
-                    index < configuration.intervals.count
+                    !configuration.intervals.isEmpty
                 else { return }
 
-                let interval = configuration.intervals[index]
+                // Get sorted intervals
+                let sortedIntervals = configuration.intervals.sorted { $0.order < $1.order }
+
+                guard index < sortedIntervals.count else { return }
+
+                let interval = sortedIntervals[index]
                 self.currentColor = interval.uiColor
             }
             .store(in: &cancellables)
@@ -170,9 +175,12 @@ class TimerViewModel: ObservableObject {
         initialTotalDuration = configuration.totalDuration
 
         if !configuration.intervals.isEmpty {
-            currentIntervalTimeRemaining = configuration.intervals[0].duration
-            initialIntervalDuration = configuration.intervals[0].duration
-            currentColor = configuration.intervals[0].uiColor
+            // Get sorted intervals
+            let sortedIntervals = configuration.intervals.sorted { $0.order < $1.order }
+
+            currentIntervalTimeRemaining = sortedIntervals[0].duration
+            initialIntervalDuration = sortedIntervals[0].duration
+            currentColor = sortedIntervals[0].uiColor
         }
 
         // Reset progress
@@ -198,9 +206,18 @@ class TimerViewModel: ObservableObject {
 
     private func updateTimerPrecisely() {
         guard let configuration = timerConfiguration,
-            currentIntervalIndex < configuration.intervals.count,
+            !configuration.intervals.isEmpty,
             let start = startTime
         else {
+            stopTimer()
+            return
+        }
+
+        // Get sorted intervals by order
+        let sortedIntervals = configuration.intervals.sorted { $0.order < $1.order }
+
+        // Make sure currentIntervalIndex is within bounds
+        guard currentIntervalIndex < sortedIntervals.count else {
             stopTimer()
             return
         }
@@ -213,7 +230,8 @@ class TimerViewModel: ObservableObject {
         let currentWholeSeconds = Int(floor(elapsedSeconds))
 
         // Calculate time remaining with one-second precision for display
-        let intervalDuration = configuration.intervals[currentIntervalIndex].duration
+        let currentInterval = sortedIntervals[currentIntervalIndex]
+        let intervalDuration = currentInterval.duration
         let remainingSeconds = max(0, intervalDuration - currentWholeSeconds)
 
         // Only update the display if the whole second has changed
@@ -222,7 +240,7 @@ class TimerViewModel: ObservableObject {
 
             // Also update total time remaining
             let totalElapsed =
-                configuration.intervals[0..<currentIntervalIndex].reduce(0) { $0 + $1.duration }
+                sortedIntervals[0..<currentIntervalIndex].reduce(0) { $0 + $1.duration }
                 + (intervalDuration - remainingSeconds)
             totalTimeRemaining = configuration.totalDuration - totalElapsed
 
@@ -232,8 +250,8 @@ class TimerViewModel: ObservableObject {
 
             // Check if current interval completed
             if remainingSeconds <= 0 {
-                if currentIntervalIndex < configuration.intervals.count - 1 {
-                    moveToNextInterval()
+                if currentIntervalIndex < sortedIntervals.count - 1 {
+                    moveToNextInterval(sortedIntervals: sortedIntervals)
 
                     // Reset timer for the next interval
                     self.startTime = Date()
@@ -248,12 +266,16 @@ class TimerViewModel: ObservableObject {
         }
     }
 
-    private func moveToNextInterval() {
+    private func moveToNextInterval(sortedIntervals: [TimerInterval]? = nil) {
         currentIntervalIndex += 1
 
+        // Get sorted intervals if not provided
+        let intervals =
+            sortedIntervals ?? timerConfiguration?.intervals.sorted { $0.order < $1.order } ?? []
+
         // Play sound for interval change
-        if currentIntervalIndex < timerConfiguration?.intervals.count ?? 0 {
-            let nextInterval = timerConfiguration!.intervals[currentIntervalIndex]
+        if currentIntervalIndex < intervals.count {
+            let nextInterval = intervals[currentIntervalIndex]
 
             // Play different sounds depending on the type of interval
             switch nextInterval.type {
@@ -289,24 +311,37 @@ class TimerViewModel: ObservableObject {
 
     var currentIntervalName: String {
         guard let configuration = timerConfiguration,
-            currentIntervalIndex < configuration.intervals.count
+            !configuration.intervals.isEmpty
         else {
             return "Ready"
         }
 
-        return configuration.intervals[currentIntervalIndex].name.isEmpty
-            ? configuration.intervals[currentIntervalIndex].type.rawValue
-            : configuration.intervals[currentIntervalIndex].name
+        // Get sorted intervals
+        let sortedIntervals = configuration.intervals.sorted { $0.order < $1.order }
+
+        guard currentIntervalIndex < sortedIntervals.count else {
+            return "Ready"
+        }
+
+        let interval = sortedIntervals[currentIntervalIndex]
+        return interval.name.isEmpty ? interval.type.rawValue : interval.name
     }
 
     var currentIntervalType: IntervalType {
         guard let configuration = timerConfiguration,
-            currentIntervalIndex < configuration.intervals.count
+            !configuration.intervals.isEmpty
         else {
             return .preparation
         }
 
-        return configuration.intervals[currentIntervalIndex].type
+        // Get sorted intervals
+        let sortedIntervals = configuration.intervals.sorted { $0.order < $1.order }
+
+        guard currentIntervalIndex < sortedIntervals.count else {
+            return .preparation
+        }
+
+        return sortedIntervals[currentIntervalIndex].type
     }
 
     // Internal wrapper method to play sounds
