@@ -1,5 +1,7 @@
 import Combine
 import Foundation
+// Import the models module
+@preconcurrency import SwiftData
 import SwiftUI
 
 #if canImport(UIKit)
@@ -107,7 +109,11 @@ class TimerViewModel: ObservableObject {
     }
 
     func setConfiguration(_ configuration: TimerConfiguration) {
-        self.timerConfiguration = configuration
+        // Create a sorted copy of the intervals based on the order property
+        var sortedConfig = configuration
+        sortedConfig.intervals.sort { $0.order < $1.order }
+
+        self.timerConfiguration = sortedConfig
         resetTimer()
     }
 
